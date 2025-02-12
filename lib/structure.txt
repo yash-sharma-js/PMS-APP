@@ -1,0 +1,51 @@
+lib/
+│── main.dart
+│── app.dart                # Entry point to initialize routes & theme
+│
+├── core/                   # Core functionalities like API calls, constants, helpers
+│   ├── config/             # App configurations (API URLs, themes)
+│   ├── services/           # API services (MongoDB integration)
+│   ├── utils/              # Helper functions, formatters, validators
+│
+├── models/                 # Data models for MongoDB collections
+│   ├── user_model.dart
+│   ├── project_model.dart
+│   ├── task_model.dart
+│
+├── providers/              # State management (Riverpod, Provider, Bloc)
+│   ├── auth_provider.dart
+│   ├── project_provider.dart
+│   ├── task_provider.dart
+│
+├── views/                  # UI screens for different pages
+│   ├── auth/               # Authentication screens
+│   │   ├── login_page.dart
+│   │   ├── register_page.dart
+│   │
+│   ├── dashboard/          # Dashboard screen
+│   │   ├── dashboard_page.dart
+│   │
+│   ├── profile/            # Profile screen
+│   │   ├── profile_page.dart
+│   │
+│   ├── projects/           # Project-related screens
+│   │   ├── projects_page.dart
+│   │   ├── single_project_page.dart
+│   │   ├── create_project_page.dart
+│   │
+│   ├── tasks/              # Task-related screens
+│   │   ├── tasks_page.dart
+│   │   ├── single_task_page.dart
+│   │   ├── create_task_page.dart
+│
+├── widgets/                # Reusable widgets/components
+│   ├── custom_button.dart
+│   ├── custom_textfield.dart
+│   ├── project_card.dart
+│   ├── task_card.dart
+│
+├── routes/                 # App navigation (GoRouter, Named Routes)
+│   ├── app_routes.dart
+│
+├── theme/                  # App themes & styles
+│   ├── app_theme.dart
