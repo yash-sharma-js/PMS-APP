@@ -37,7 +37,13 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(title: Text('Project Management System')),
+        appBar: AppBar(
+          title: Container(
+            margin: EdgeInsets.only(top: 20, left: 10),
+            // ignore: deprecated_member_use
+            child: Text('MakeIT', textScaleFactor: 1.8),
+          ),
+        ),
         body: PageView(
           controller: _pageController,
           children: _pages,
